@@ -183,7 +183,7 @@ resource "sentry_issue_alert" "member_alert" {
     {
       notify_email = {
         target_type       = "Member"
-        target_identifier = data.sentry_organization_member.member.internal_id
+        target_identifier = data.sentry_organization_member.member.id
         fallthrough_type  = "AllMembers"
       }
     },

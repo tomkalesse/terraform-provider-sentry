@@ -48,7 +48,7 @@ func (d *OrganizationMemberDataSource) Schema(ctx context.Context, req datasourc
 
 		Attributes: map[string]schema.Attribute{
 			"id": schema.StringAttribute{
-				MarkdownDescription: "The ID of this resource.",
+				MarkdownDescription: "The ID of the organization member.",
 				Computed:            true,
 			},
 			"organization": DataSourceOrganizationAttribute(),
